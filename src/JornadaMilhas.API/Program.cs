@@ -39,9 +39,6 @@ builder.Services.AddTransient(typeof(PeriodoConverter));
 //Tratamento do Token
 builder.Services.AddTransient(typeof(GenerateToken));
 
-
-
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
