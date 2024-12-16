@@ -7,7 +7,7 @@
     <ProjectGuid>61783da9-903e-4ac4-9427-874ed2980438</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>jornadamilhas.api</DockerServiceName>
+    <DockerServiceName>jornadamilhas.api1</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
