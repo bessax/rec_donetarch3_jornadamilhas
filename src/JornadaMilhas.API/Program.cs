@@ -27,6 +27,12 @@ builder.Services.AddDbContext<JornadaMilhasContext>((options) => {
                 
 });
 
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration["ConnectionString:Redis"];
+
+});
+
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<JornadaMilhasContext>()
     .AddDefaultTokenProviders();

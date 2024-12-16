@@ -20,7 +20,6 @@ services:
       - '57395:8080'
       - '57396:8081'
 
-
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     hostname: 'sqlserver'
@@ -36,8 +35,17 @@ services:
       - 1433
     networks:
       - jornadamilhas-network
+
+  redis: 
+   image: redis:7.2.4
+   restart: unless-stopped
+   networks:
+     - jornadamilhas-network
+   ports:
+     - '6379:6379'
+
 volumes:
-  sql_data:    
+  sql_data:
 
 networks:
   jornadamilhas-network:
