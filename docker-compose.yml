@@ -1,5 +1,5 @@
 services:
-  jornadamilhas.api:    
+  jornadamilhas.api1: &app  
     image: ${DOCKER_REGISTRY-}jornadamilhasapi
     build:    
       context: .
@@ -12,6 +12,14 @@ services:
       - sqlserver
     networks:
       - jornadamilhas-network
+
+  jornadamilhas.api2:
+     <<: *app
+     image: ${DOCKER_REGISTRY-}jornadamilhasapi:app2
+     ports:
+      - '57395:8080'
+      - '57396:8081'
+
 
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
