@@ -30,4 +30,10 @@ public class CacheService : ICacheService
         var jsonData = JsonSerializer.Serialize(data);
         await cache.SetStringAsync(key, jsonData, options);
     }
+
+    public async Task RemoveCachedDataAsync(string key)
+    {
+        await cache.RemoveAsync(key);
+    }
+
 }
