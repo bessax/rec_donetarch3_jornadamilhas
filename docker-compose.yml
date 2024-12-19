@@ -1,6 +1,6 @@
 services:
   jornadamilhas.api1: &app  
-    image: ${DOCKER_REGISTRY-}jornadamilhasapi
+    image: jornadamilhasacr.azurecr.io/jornadamilhasapi:app1
     build:    
       context: .
       dockerfile: ./src/JornadaMilhas.API/Dockerfile
@@ -15,7 +15,7 @@ services:
 
   jornadamilhas.api2:
      <<: *app
-     image: ${DOCKER_REGISTRY-}jornadamilhasapi:app2
+     image: jornadamilhasacr.azurecr.io/jornadamilhasapi:app2
      ports:
       - '57395:8080'
       - '57396:8081'
