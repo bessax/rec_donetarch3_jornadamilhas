@@ -158,9 +158,6 @@ Este é um projeto de estudo, e o `appsettings.json` contém valores para serem 
 - [ ] Retornar `400 Bad Request` para dados inválidos (hoje retorna `500` via `Results.Problem`).
 - [ ] Adicionar `Dockerfile` e `docker-compose` (API + SQL Server).
 - [ ] Configurar pipeline de CI para build e testes.
-## 🤝 Contribuindo
- 
-Sugestões e *pull requests* são bem-vindos! Abra uma *issue* para conversarmos sobre melhorias.
  
 ## 📄 Licença
  
