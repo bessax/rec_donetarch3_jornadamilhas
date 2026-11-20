@@ -144,7 +144,7 @@ Os **testes de integração** sobem a API em memória com `WebApplicationFactory
 - cenários inválidos: rota nula, token inválido e rota de endpoint vazia.
 ## ⚠️ Segurança
  
-Este é um projeto de estudo, e o `appsettings.json` contém valores de exemplo (senha do SQL Server e chave do JWT). Em qualquer ambiente real:
+Este é um projeto de estudo, e o `appsettings.json` contém valores para serem alterados. Em qualquer ambiente real:
  
 - não versione segredos: use **User Secrets**, variáveis de ambiente ou um cofre (Azure Key Vault, por exemplo);
 - gere uma nova chave `JWTKey:key` forte;
